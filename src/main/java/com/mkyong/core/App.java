@@ -31,7 +31,6 @@ public class App {
 		Query searchQry = new Query(Criteria.where("orgId").is(001));
 		Organization orgResult = mongoOperation.findOne(searchQry, Organization.class);
 		System.out.println("Search result:" + orgResult);
-
 	}
 
 	private static void findAndUpdate(MongoOperations mongoOperation) {
