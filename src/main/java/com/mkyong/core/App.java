@@ -27,7 +27,7 @@ public class App {
 		if (deepLogic) {
 			findAndUpdate(mongoOperation);
 		}
-
+//
 		Query searchQry = new Query(Criteria.where("orgId").is(001));
 		Organization orgResult = mongoOperation.findOne(searchQry, Organization.class);
 		System.out.println("Search result:" + orgResult);
